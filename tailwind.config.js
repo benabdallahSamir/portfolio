@@ -10,6 +10,10 @@ export default {
     fontFamily: {
       sans: ["Merriweather"],
     },
+    screens: {
+      s1: { max: "1100px" },
+      s2: {max : "500px"}
+    },
     extend: {
       colors: {
         background: {
