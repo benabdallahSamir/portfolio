@@ -5,7 +5,9 @@ const Navbar = () => {
   const [showNav, setshowNav] = useState(false);
   return (
     <nav className="w-full h-[10vh] bg-background-secondary flex items-center px-2 s2:px-4 relative">
-      <img src="" alt="" className="w-10 h-10 rounded-cercle" />
+      <div className="img-hover hover:img-hover-active">
+        <img src="" alt="" className="w-10 h-10 rounded-cercle" />
+      </div>
       <button
         className="hidden s1:block ml-auto"
         onClick={() => setshowNav((curr) => !curr)}
@@ -27,7 +29,7 @@ const Navbar = () => {
             className="cursor-pointer duration-300 hover:text-highlight-link"
             onClick={() => setshowNav((curr) => !curr)}
           >
-            who am i
+            who am i?
           </Link>
         </li>
         <li className="ml-10 s1:pl-0 s1:h-10 flex items-center ">

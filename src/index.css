@@ -1,3 +1,41 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+  .img-hover {
+    position: relative;
+    &::after {
+      content: "samir benabdallah";
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translate(110%, -50%);
+      width: 0;
+      overflow: hidden;
+      transition: 0.5s;
+    }
+  }
+  .img-hover-active::after {
+    width: 300px;
+  }
+  .letter-spacing-2 {
+    letter-spacing: 3px;
+  }
+  .skills-card {
+    position: relative;
+    &::after {
+      content: "my skills";
+      font-size: xx-large;
+      display: grid;
+      place-items: center;
+      cursor: pointer;
+      min-width: 100%;
+      min-height: 100%;
+      border-radius: inherit;
+      background-color: red;
+      position: absolute;
+      transition: 0.5s;
+    }
+  }
+}
